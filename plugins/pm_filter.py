@@ -813,7 +813,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
                 InlineKeyboardButton('+ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ +', url=f'http://t.me/{temp.U_NAME}?startgroup=start')
                 ],[
-                #InlineKeyboardButton("🆘 ʜᴇʟᴘ", callback_data='features'),
+                InlineKeyboardButton("🆘 ʜᴇʟᴘ", callback_data='features'),
                 InlineKeyboardButton('📚 ᴀʙᴏᴜᴛ', callback_data=f'about')
                 ],[
                 InlineKeyboardButton('🪙 ᴘʀᴇᴍɪᴜᴍ', callback_data='seeplans'),
@@ -845,7 +845,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 	)
     elif query.data == "free":
         buttons = [[
-            InlineKeyboardButton('📸ꜱᴇɴᴅ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ 📸', url=f'https://t.me/JisshuDeveloperBot')
+            InlineKeyboardButton('📸 ꜱᴇɴᴅ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ 📸', url=f'https://t.me/JisshuDeveloperBot')
         ],[
             InlineKeyboardButton('🏅 ᴄᴜꜱᴛᴏᴍ ᴘʟᴀɴꜱ 🏅', callback_data='other')
         ],[
@@ -1002,7 +1002,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
  
     elif query.data == "Source":
         buttons = [[
-            InlineKeyboardButton('Repo', url='https://github.com/Jisshubot/Jisshu-Filter-Bot')
+            #InlineKeyboardButton('Repo', url='https://github.com/Jisshubot/Jisshu-Filter-Bot')
         ],[
             InlineKeyboardButton('« ʙᴀᴄᴋ', callback_data='about'),
             InlineKeyboardButton('× ᴄʟᴏꜱᴇ ×', callback_data='close_data')
