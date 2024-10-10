@@ -808,8 +808,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data.startswith("lang_art"):
         _, lang = query.data.split("#")
         await query.answer(f"ʏᴏᴜ sᴇʟᴇᴄᴛᴇᴅ {lang.title()} ʟᴀɴɢᴜᴀɢᴇ ⚡️", show_alert=True)
- 
-elif query.data == "start":
+  
+    elif query.data == "start":
         buttons = [[
                 InlineKeyboardButton('+ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ +', url=f'http://t.me/{temp.U_NAME}?startgroup=start')
                 ],[
@@ -832,7 +832,7 @@ elif query.data == "start":
         btn = [[
             InlineKeyboardButton('🪙 ᴄʟɪᴄᴋ ᴀʟʟ ᴘʟᴀɴꜱ & ᴘʀɪᴄᴇꜱ 🪙', callback_data='free')
         ],[
-            InlineKeyboardButton('×ᴄʟᴏꜱᴇ×', callback_data='close_data')
+            InlineKeyboardButton('× ᴄʟᴏꜱᴇ ×', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(btn)
         m=await query.message.reply_sticker("CAACAgQAAxkBAAEiLZ9l7VMuTY7QHn4edR6ouHUosQQ9gwACFxIAArzT-FOmYU0gLeJu7x4E") 
