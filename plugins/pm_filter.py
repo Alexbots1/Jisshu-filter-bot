@@ -813,7 +813,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
                 InlineKeyboardButton('+ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ +', url=f'http://t.me/{temp.U_NAME}?startgroup=start')
                 ],[
-                InlineKeyboardButton("🆘 ʜᴇʟᴘ ", callback_data='features'),
+                InlineKeyboardButton("🆘ʜᴇʟᴘ", callback_data='features'),
                 InlineKeyboardButton('📚 ᴀʙᴏᴜᴛ', callback_data=f'about')
                 ],[
                 InlineKeyboardButton('🪙 ᴘʀᴇᴍɪᴜᴍ', callback_data='seeplans'),
@@ -832,7 +832,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         btn = [[
             InlineKeyboardButton('🪙 ᴄʟɪᴄᴋ ᴀʟʟ ᴘʟᴀɴꜱ & ᴘʀɪᴄᴇꜱ 🪙', callback_data='free')
         ],[
-            InlineKeyboardButton('× ᴄʟᴏꜱᴇ ×', callback_data='close_data')
+            InlineKeyboardButton('×ᴄʟᴏꜱᴇ×', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(btn)
         m=await query.message.reply_sticker("CAACAgQAAxkBAAEiLZ9l7VMuTY7QHn4edR6ouHUosQQ9gwACFxIAArzT-FOmYU0gLeJu7x4E") 
