@@ -811,13 +811,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
   
     elif query.data == "start":
         buttons = [[
-                InlineKeyboardButton('+ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ +', url=f'http://t.me/{temp.U_NAME}?startgroup=start')
+                InlineKeyboardButton('☆ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ☆', url=f'http://t.me/{temp.U_NAME}?startgroup=start')
                 ],[
-                InlineKeyboardButton("🆘ʜᴇʟᴘ", callback_data='features'),
-                InlineKeyboardButton('📚 ᴀʙᴏᴜᴛ', callback_data=f'about')
+                InlineKeyboardButton("Hᴇʟᴘ ⚙️", callback_data='features'),
+                InlineKeyboardButton('Aʙᴏᴜᴛ 💌', callback_data=f'about')
                 ],[
-                InlineKeyboardButton('🪙 ᴘʀᴇᴍɪᴜᴍ', callback_data='seeplans'),
-                InlineKeyboardButton('🫂 ʀᴇғᴇʀ', callback_data="reffff")
+                InlineKeyboardButton('Pʀᴇᴍɪᴜᴍ 🎫', callback_data='seeplans'),
+                InlineKeyboardButton('Rᴇғᴇʀ ⚜️', callback_data="reffff")
                 ],[
                 InlineKeyboardButton('Mᴏsᴛ Sᴇᴀʀᴄʜ 🔍', callback_data="mostsearch"),
                 InlineKeyboardButton('Tᴏᴘ Tʀᴇɴᴅɪɴɢ ⚡', callback_data="trending")
@@ -830,9 +830,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )      
     elif query.data == "seeplans":
         btn = [[
-            InlineKeyboardButton('🪙 ᴄʟɪᴄᴋ ᴀʟʟ ᴘʟᴀɴꜱ & ᴘʀɪᴄᴇꜱ 🪙', callback_data='free')
+            InlineKeyboardButton('🍁 𝗖𝗹𝗶𝗰𝗸 𝗔𝗹𝗹 𝗣𝗹𝗮𝗻𝘀 & 𝗣𝗿𝗶𝗰𝗲𝘀 🍁', callback_data='free')
         ],[
-            InlineKeyboardButton('×ᴄʟᴏꜱᴇ×', callback_data='close_data')
+            InlineKeyboardButton('• 𝗖𝗹𝗼𝘀𝗲 •', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(btn)
         m=await query.message.reply_sticker("CAACAgQAAxkBAAEiLZ9l7VMuTY7QHn4edR6ouHUosQQ9gwACFxIAArzT-FOmYU0gLeJu7x4E") 
@@ -845,12 +845,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
 	)
     elif query.data == "free":
         buttons = [[
-            InlineKeyboardButton('📸 ꜱᴇɴᴅ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ 📸', url=f'https://t.me/JisshuDeveloperBot')
+            InlineKeyboardButton('☆📸 𝙎𝙚𝙣𝙙 𝙨𝙘𝙧𝙚𝙚𝙣𝙨𝙝𝙤𝙩 📸☆', url=f'https://t.me/JisshuDeveloperBot')
         ],[
-            InlineKeyboardButton('🏅 ᴄᴜꜱᴛᴏᴍ ᴘʟᴀɴꜱ 🏅', callback_data='other')
+            InlineKeyboardButton('💎 𝗖𝘂𝘀𝘁𝗼𝗺 𝗣𝗹𝗮𝗻 💎', callback_data='other')
         ],[
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='broze'),
-            InlineKeyboardButton('ᴄʟᴏꜱᴇ', callback_data='close_data')
+            InlineKeyboardButton('• 𝗕𝗮𝗰𝗸 •', callback_data='broze'),
+            InlineKeyboardButton('• 𝗖𝗹𝗼𝘀𝗲 •', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)             
         await client.edit_message_media(
@@ -866,9 +866,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
     #jisshu
     elif query.data == "broze":
        buttons = [[
-            InlineKeyboardButton('🪙 ᴄʟɪᴄᴋ ᴀʟʟ ᴘʟᴀɴꜱ & ᴘʀɪᴄᴇꜱ 🪙', callback_data='free')
+            InlineKeyboardButton('🍁 𝗖𝗹𝗶𝗰𝗸 𝗔𝗹𝗹 𝗣𝗹𝗮𝗻𝘀 & 𝗣𝗿𝗶𝗰𝗲𝘀 🍁', callback_data='free')
         ], [
-            InlineKeyboardButton('ᴄʟᴏꜱᴇ', callback_data='close_data')
+            InlineKeyboardButton('• 𝗖𝗹𝗼𝘀𝗲 •', callback_data='close_data')
        ]]
        reply_markup = InlineKeyboardMarkup(buttons)
   
@@ -883,9 +883,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         
     elif query.data == "other":
         buttons = [[
-            InlineKeyboardButton('📱 ᴄᴏɴᴛᴀᴄᴛ ᴏᴡɴᴇʀ ᴛᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ', user_id = ADMINS[0])
+            InlineKeyboardButton('☎️ 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 𝗢𝘄𝗻𝗲𝗿 𝗧𝗼 𝗞𝗻𝗼𝘄 𝗠𝗼𝗿𝗲', user_id = ADMINS[0])
         ],[
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='free')
+            InlineKeyboardButton('• 𝗕𝗮𝗰𝗸 •', callback_data='free')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
@@ -920,12 +920,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
         await query.message.edit_media(
             media=InputMediaPhoto(
-            media=START_IMG,
+            media=random.choice(START_IMG),
             caption=script.HELP_TXT,
             parse_mode=enums.ParseMode.HTML 
             ),
             reply_markup=reply_markup
-	)
+	    )
       #  await query.message.edit_text(
       #      text=script.HELP_TXT,
       #      reply_markup=reply_markup,
