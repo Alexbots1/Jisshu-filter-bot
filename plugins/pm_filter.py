@@ -907,13 +907,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
     elif query.data == "features":
         buttons = [[
-              InlineKeyboardButton('ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅꜱ', callback_data='admincmd'),
+              InlineKeyboardButton('Aᴅᴍɪɴ Cᴏᴍᴍᴀɴᴅs', callback_data='admincmd'),
               InlineKeyboardButton('Iᴍᴀɢᴇ Tᴏ Lɪɴᴋ', callback_data='telegraph'),
               ], [
               InlineKeyboardButton('F-Sᴜʙ', callback_data='fsub'),
-              InlineKeyboardButton('ɢʀᴏᴜᴘ ꜱᴇᴛᴛɪɴɢꜱ', callback_data='earn')
+              InlineKeyboardButton('Gʀᴏᴜᴘ Sᴇᴛᴜᴘ', callback_data='earn')
               ], [
-              InlineKeyboardButton('« ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ', callback_data='start')
+              InlineKeyboardButton('⋞ Back To Home', callback_data='start')
               ]]
     
         reply_markup = InlineKeyboardMarkup(buttons)
