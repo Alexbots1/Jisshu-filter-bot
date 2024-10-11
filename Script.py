@@ -207,11 +207,13 @@ User - {}"""
 
 
     MOVIES_UPDATE_TXT = """<b>#𝑵𝒆𝒘_𝑭𝒊𝒍𝒆_𝑨𝒅𝒅𝒆𝒅 ✅
-**🍿 Title:** {title}
-**🎃 Genres:** {genres}
-**📆 Year:** {year}
-**⭐ Rating:** {rating} / 10
-</b>"""
+
+🏷 Title: <a href={url}>{title}</a>
+🎭 Genres: {genres}
+📆 Year: <a href={url}/releaseinfo>{year}</a>
+🌟 Rating: <a href={url}/ratings>{rating} / 10</a>
+☀️ Languages: {languages}
+📀 RunTime: {runtime} Minutes
 
     PREPLANS_TXT = """<b>👋 ʜᴇʏ {},
 
